@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.*;
         var usuarioAutenticado = authenticationManager.authenticate(authToken);
         String JWTtoken = tokenService.generarToken((Usuario) usuarioAutenticado.getPrincipal());
         Usuario usuario = usuariosRepository.getUsuariosByDni(datosAutenticacionUsuario.dni());
-        DatosRespuestaUsuario datosRespuestaUsuario = new DatosRespuestaUsuario(usuario.getDni(), usuario.getNombres(), usuario.getApellidoPaterno(), usuario.getApellidoMaterno(), usuario.getCorreo(), usuario.getCel());
+        DatosRespuestaUsuario datosRespuestaUsuario = new DatosRespuestaUsuario(usuario.getDni(), usuario.getNombres(), usuario.getApellidoPaterno(), usuario.getApellidoMaterno(), usuario.getCorreo(), usuario.getCel(),JWTtoken);
         System.out.printf(JWTtoken);
         return ResponseEntity.ok(datosRespuestaUsuario);
     }
