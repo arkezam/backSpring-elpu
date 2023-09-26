@@ -1,11 +1,11 @@
 CREATE TABLE `usuarios` (
     `id` bigint PRIMARY KEY AUTO_INCREMENT,
-    `dni` varchar(8) NOT NULL,
+    `dni` varchar(8) NOT NULL UNIQUE ,
     `password` varchar(255) NOT NULL,
     `nombres` varchar(100) NOT NULL,
     `apellido_paterno` varchar(100) NOT NULL,
     `apellido_materno` varchar(100) NOT NULL,
-    `correo` varchar(100) NOT NULL,
+    `correo` varchar(100) NOT NULL UNIQUE,
     `cel` varchar(20) NOT NULL,
     `estado` tinyint DEFAULT 1,
     `nivel` tinyint DEFAULT 1,

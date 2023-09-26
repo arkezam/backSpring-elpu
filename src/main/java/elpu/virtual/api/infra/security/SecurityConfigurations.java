@@ -36,7 +36,9 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.POST,  "/api/login").permitAll()
                         .requestMatchers(HttpMethod.PUT,  "/api/login").permitAll()
                         .requestMatchers("/api/registro").permitAll()
-
+                        .requestMatchers(HttpMethod.POST, "/enviarFoto").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/reclamo").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/recuperar").permitAll()
                         .anyRequest().authenticated()
                         .and()
                         .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class))
