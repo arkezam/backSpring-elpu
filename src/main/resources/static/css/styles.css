@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+}
+header .container img{
+    height: 60px;
+}
+header{
+    padding: 25px;
+}
+.hamburger{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+li a{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: #242E52;
+    opacity: 0.6;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container{
+    gap: 50px;
+    text-align: end;
+    padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+}
+main .container img{
+    width: 40vw;
+}
+.description h1{
+
+    font-size: 2.5rem;
+    padding-left: 20%;
+    font-size: 50px;
+    line-height: 1.2em;
+}
+.description h3{
+    color: black;
+    padding-left: 10%;
+}
+a{
+    color: #242E52;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-weight: bold;
+    color: #232C50;
+}
+
+.seccion__franja{
+    background-color: #232C80;
+    color: #FFFFFF;
+    padding: 25px;
+}
+
+.seccion__franja .container{
+    display: flex;
+    flex-direction: row;
+    padding: 39px 0px;
+}
+.seccion__franja .container p{
+    max-width: 50%;
+}
+.seccion__franja .container h1{
+    font-size: 40px;
+}
+header .container .btn_contact{
+    background-color: orange;
+    color: #FFFFFF;
+    padding: 15px 40px 15px 40px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 4px #232C80 ;
+
+}
+
+.btn_contact{
+    background-color: #232C80;
+    color: #FFFFFF;
+    padding: 15px 40px 15px 40px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 4px #232C80 ;
+
+}
+.btn_contact:hover{
+    opacity: 0.7;
+}
+.contacto{
+    display: flex;
+    justify-content: end;
+}
+
+/* section tarjeta*/
+
+.seccion__tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+    gap: 50px;
+    background-color: #FAFAFA;
+
+}
+.seccion__tarjetas .tarjeta{
+    max-width: 500px;
+}
+
+
+.titulo__tarjeta{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    align-items: center;
+}
+
+
+.tarjeta p{
+    color: grey;
+}
+.titulo_texto{
+    padding-left: 20px;
+}
+
+p.contenido {
+    margin-left: 60px;
+}
+/* Seccion perfiles */
+
+.card{
+    padding: 0px 20px 20px 20px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+.card .card_titulo{
+    padding-bottom: 20px;
+    color: #3F4868;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.card img{
+    position: relative;
+    top: -41px;
+}
+.btn__morado{
+    background-color: #232C80;
+    color: #FFFFFF;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+}
+
+
+.btn__morado p{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.seccion__perfil a:hover{
+    opacity: 0.7;
+}
+.seccion__perfil .container{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+
+}
+.seccion__perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+}
+.seccion__perfil h2{
+    font-size: 7vh;
+    padding: 10px 0px;
+}
+/* Boton Segunda Franja */
+.seccion__franja .btn_contact{
+    background-color: #FFFFFF;
+    color: #232C80;
+
+}
+
+/* Footer */
+
+footer{
+    background-color: #1E1E26;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 50px 50px 0px 50px;
+}
+
+
+.container__footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+footer .copy{
+    text-align: center  ;
+    color: #8C8C94;
+    padding: 30px 0px;
+}
+
+.footer__logos{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.footer__logos img{
+    height: auto;
+    max-width: 105px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    padding: 0px 50px;
+}
+.enlaces ul li a{
+    color: aliceblue;
+    font-weight: normal;
+}
+
+.enlaces ul li{
+    padding: 10px;
+}
+
+input {
+    border-radius: 20px;
+    height: 21px;
+    padding: 10px;
+    width: 220px;
+
+}
+
+/* Diseño para movil */
+@media(max-width:600px){
+    .container{
+        max-width: 85%;
+    }
+
+    header .container .btn_contact{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+
+    }
+    header .container a img{
+        height: 20px;
+
+    }
+    header .container img{
+        height: 45px;
+
+    }
+
+    header{
+        padding: 35px 0;
+    }
+    header .container{
+        max-width: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    main .container{
+        max-width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+
+    }
+
+    main .container img{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    main .container h1{
+        line-height: 1.2em;
+        font-size: 40px;
+
+    }
+    .description{
+        gap:20px;
+        padding-left: 0px;
+    }
+    .description h3, .description h1{
+
+        padding-left: 0px;
+    }
+    p.contenido {
+        margin-left: 0px;
+    }
+
+
+    .titulo__tarjeta{
+        justify-content: start;
+    }
+    .seccion__franja, .seccion__franja .container p{
+        background-color: orange;
+        padding: 0px;
+        max-width: 100%;
+    }
+    .titulo_texto{
+        background-color: #e5c4fd;
+        padding: 10px 0px ;
+        width: 80vw;
+        position: absolute;
+        right:  0px;
+
+    }
+
+    .titulo_texto h3{
+        margin-left: 50px;
+        font-size: 12px;
+        color: black;
+    }
+    .btn__morado{
+        z-index: 1;
+    }
+    .seccion__franja .container{
+        flex-direction: column;
+    }
+    .seccion__tarjetas{
+        padding: 0px 10px;
+    }
+    .seccion__perfil{
+        padding: 30px 20px;
+    }
+    .seccion__perfil h2{
+        font-size: 6vh;
+        text-align: center;
+    }
+    .seccion__perfil .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .seccion__perfil .container .card{
+        display: none;
+    }
+    .seccion__perfil .container .card:first-child{
+        display: block;
+    }
+    .franja_final{
+        text-align: center;
+    }
+
+    .enlaces{
+        margin: 30px 0px;
+        padding: auto;
+        display: flex;
+        flex-direction: row;
+        color: #FFFFFF;
+    }
+
+    /* Uso del Important solo por fines educativos xd */
+    .btn_fin{
+        background-color: #232C50 !important;
+        color: white !important;
+    }
+
+    footer{
+
+        padding: 30px 0px;
+        align-items: center;
+    }
+    .footer__logos img{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .footer__logos{
+        gap: 50px;
+    }
+    .icons{
+        justify-content: space-around;
+        gap: 35px;
+        padding-bottom: 30px;
+    }
+    footer .container__footer{
+        display: flex;
+        flex-direction: column-reverse;
+
+        margin: auto;
+        padding: 10px 10px;
+        color: wheat;
+
+    }
+
+    footer img{
+        height: 30px;
+    }
+    footer .copy{
+        padding: 0px;
+
+    }
+
+
+}

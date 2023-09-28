@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>APP Servicios ELPU</title>
+</head>
+<body>
+<header>
+
+    <div class="container">
+        <img th:src="@{/img/logo.png}"   alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+
+                <li><a href="#">Guía de Uso</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk">Descargar</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn_contact">
+            Ingresar
+        </a>
+        <a href="#" class="hamburger"><img src="./assets/img/icon-hamburger.svg" alt=""></a>
+
+    </div>
+</header>
+<main>
+    <div class="container">
+        <img th:src="@{/img/intro.png}"  alt="padel-intro">
+        <div class="description">
+            <h1>Descarga el Aplicativo Móvil Electro Puno</h1>
+            <h3>Acceso Rápido a toda la información de tu Suministro de Energía Eléctrica, Lugares de Pago, Registro de Reclamos, y Mucho Más!</h3>
+            <div class="contacto">
+
+                <a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk" class="btn_contact">
+                    Descargar
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<section class="seccion__franja">
+    <div class="container">
+        <h1>Que puedo hacer desde la APP?</h1>
+        <p>Revisar el estado de la Facturación de los suministros que tienes registrado con tu DNI, generar tu recibo electrónico, ver centros autorizados de cobranza, pagos mediante aplicativos de bancos asociados, reportes y reclamos.</p>
+    </div>
+
+</section>
+
+<section class="seccion__tarjetas">
+    <div class="container">
+        <div class="tarjeta">
+            <div class="titulo__tarjeta">
+                <div class="btn__morado">
+                    <p>01</p>
+                </div>
+                <div class="titulo_texto">
+                    <h3>
+                        Facilidad de Uso
+                    </h3>
+                </div>
+
+            </div>
+            <p class="contenido">
+                Registrate y mantén iniciada tu sesión, no necesitas iniciar sesión cada vez que necesites ver tu recibo, el APP guardará tus credenciales y podrás generar tu recibo con un toque.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tarjeta">
+            <div class="titulo__tarjeta">
+                <div class="btn__morado">
+                    <p>02</p>
+                </div>
+                <div class="titulo_texto">
+                    <h3>
+                        Centros de Cobranza
+                    </h3>
+                </div>
+            </div>
+            <p class="contenido">
+                Ubíca el Centro de Cobranza más cercano geográficamente respecto a tu ubicación actual, visualiza los demás centros de cobranza autorizados en toda la región.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tarjeta">
+            <div class="titulo__tarjeta">
+                <div class="btn__morado">
+                    <p>03</p>
+                </div>
+                <div class="titulo_texto">
+                    <h3>
+                        Realiza Reportes
+                    </h3>
+                </div>
+            </div>
+            <p class="contenido">
+                Envía reportes de hurtos de energía, reconexión, y reclamos.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="seccion__franja">
+    <div class="container">
+        <h1 class="franja_final">Descarga la APP ahora! <br> Tambien disponible en PlayStore</h1>
+        <div class="btn_contact btn_fin">
+            <a th:href="@{/descargar}">Descargar</a>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="container__footer">
+        <div class="footer__logos">
+            <!-- <img src="./assets/img/logo-footer.png" alt="logo"> -->
+            <div class="icons">
+                <img th:src="@{/img/icon-facebook.svg}"  alt="Facebook">
+                <img th:src="@{/img/icon-youtube.svg}"  alt="Youtube">
+                <img th:src="@{/img/icon-stoer.svg}"  alt="Facebook">
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk">Descargar</a></li>
+                <li><a href="#">Preguntas Frec.</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Buscar...">
+            <a href="#" class="btn__morado">Ir</a>
+        </form>
+    </div>
+    <div class="copy">
+        <p>Copyright arkezam@gmail.com - 2023. All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>
+

@@ -32,13 +32,18 @@ public class SecurityConfigurations {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS) //se indica el tipo de session
                 .and()
                 .authorizeHttpRequests((authorize) -> authorize
-
+                        .requestMatchers(HttpMethod.GET, "/").permitAll()
+                        .requestMatchers("/css/**").permitAll()
+                        .requestMatchers("/img/**").permitAll()
+                        .requestMatchers("/descargar").permitAll()
+                        .requestMatchers("/versions/**").permitAll()
                         .requestMatchers(HttpMethod.POST,  "/api/login").permitAll()
                         .requestMatchers(HttpMethod.PUT,  "/api/login").permitAll()
                         .requestMatchers("/api/registro").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/enviarFoto").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/reclamo").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/recuperar").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/enviarFoto").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/reclamo").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/recuperar").permitAll()
+
                         .anyRequest().authenticated()
                         .and()
                         .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class))

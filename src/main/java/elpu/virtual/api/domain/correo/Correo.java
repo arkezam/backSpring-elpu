@@ -13,5 +13,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Correo implements Serializable {
     private String toEmail;
+    private String subject;
+    private String body;
 
 }

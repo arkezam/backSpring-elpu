@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @RestController
-@RequestMapping("/enviarFoto")
+@RequestMapping("/api/enviarFoto")
 public class ReportarController {
     @Autowired
     FotoRepository fotoRepository;
