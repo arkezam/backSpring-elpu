@@ -33,6 +33,4 @@ public class RegistroController {
         usuariosRepository.save(usuario);
         return ResponseEntity.ok().body("Registro Exitoso");
     }
-
-
 }

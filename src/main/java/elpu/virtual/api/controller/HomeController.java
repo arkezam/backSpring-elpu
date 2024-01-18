@@ -12,5 +12,12 @@ public class HomeController {
     public String home() {
         return "home";
     }
-
+    @GetMapping("/politicas")
+    public String politicas() {
+        return "politicas";
+    }
+    @GetMapping("/solicitudbaja")
+    public String solicitudBaja() {
+        return "solicitudbaja";
+    }
 }

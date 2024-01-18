@@ -70,11 +70,6 @@ public class Usuario implements UserDetails {
     }
 
 
-
-    public Long getId() {
-        return id;
-    }
-
     @Override
     public boolean isAccountNonExpired() {
         return true;

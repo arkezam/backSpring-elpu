@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>APP Servicios ELPU</title>
+</head>
+<body>
+<header>
+
+    <div class="container">
+        <img th:src="@{/img/logo.png}"   alt="logo">
+        <nav>
+            <ul>
+                <li><a th:href="@{home}">Inicio</a></li>
+
+                <li><a href="#">Guía de Uso</a></li>
+                <li><a th:href="@{politicas}">Politicas de Uso</a></li>
+                <li><a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk">Descargar</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="hamburger"><img src="./assets/img/icon-hamburger.svg" alt=""></a>
+
+    </div>
+</header>
+
+<main>
+
+    <div class="container" style="flex-direction: column; align-content: start; align-items: start; text-align: start">
+       <h1>Solicitud de Baja</h1>
+        <form action="mailto:arkezam@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required style="border: solid  darkslateblue">
+            <br>
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required style="border: solid  darkslateblue">
+            <br>
+            <label for="motivo">Motivo de la Baja:</label><br>
+            <textarea id="motivo" name="motivo" rows="4" cols="20" required style="border: solid  darkslateblue"></textarea>
+            <br>
+
+            <label for="confirmacion">Confirmo que deseo solicitar la baja y entiendo que He leído <br>y acepto que los datos registrados en la aplicación Electro Puno
+                <br> Servicios serán eliminados: <input type="checkbox" id="confirmacion" name="confirmacion" required><br></label><br>
+
+
+
+            <button class="btn__morado" type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+    <br>
+    <br>
+</main>
+
+<footer>
+    <div class="container__footer">
+        <div class="footer__logos">
+            <!-- <img src="./assets/img/logo-footer.png" alt="logo"> -->
+            <div class="icons">
+                <img th:src="@{/img/icon-facebook.svg}"  alt="Facebook">
+                <img th:src="@{/img/icon-youtube.svg}"  alt="Youtube">
+                <img th:src="@{/img/icon-stoer.svg}"  alt="Facebook">
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk">Descargar</a></li>
+                <li><a href="#">Preguntas Frec.</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Buscar...">
+            <a href="#" class="btn__morado">Ir</a>
+        </form>
+    </div>
+    <div class="copy">
+        <p>Copyright arkezam@gmail.com - 2023. All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>
+

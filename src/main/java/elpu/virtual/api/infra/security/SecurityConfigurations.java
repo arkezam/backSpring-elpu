@@ -33,6 +33,8 @@ public class SecurityConfigurations {
                 .and()
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers(HttpMethod.GET, "/").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/politicas").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/solicitudbaja").permitAll()
                         .requestMatchers("/css/**").permitAll()
                         .requestMatchers("/img/**").permitAll()
                         .requestMatchers("/descargar").permitAll()
@@ -43,6 +45,8 @@ public class SecurityConfigurations {
                         .requestMatchers(HttpMethod.POST, "/api/enviarFoto").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/reclamo").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/recuperar").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/notificacion").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/guardarSuministros").permitAll()
 
                         .anyRequest().authenticated()
                         .and()

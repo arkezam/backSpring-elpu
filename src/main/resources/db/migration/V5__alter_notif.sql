@@ -1,0 +1,1 @@
+ALTER TABLE `notificaciones` ADD titulo varchar(300) default "Notificacion" after id;

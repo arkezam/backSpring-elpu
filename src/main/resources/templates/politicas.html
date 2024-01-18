@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>APP Servicios ELPU</title>
+</head>
+<body>
+<header>
+
+    <div class="container">
+        <img th:src="@{/img/logo.png}"   alt="logo">
+        <nav>
+            <ul>
+                <li><a th:href="@{/}">Inicio</a></li>
+
+                <li><a href="#">Guía de Uso</a></li>
+                <li><a th:href="@{politicas}">Politicas de Uso</a></li>
+                <li><a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk">Descargar</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="hamburger"><img src="./assets/img/icon-hamburger.svg" alt=""></a>
+
+    </div>
+</header>
+
+<main>
+
+    <div class="container" style="flex-direction: column; align-content: start; align-items: start; text-align: start">
+        <h2>Política de Privacidad</h2>
+
+        <p>Esta política de privacidad explica cómo Electro Puno S.A.A. ("nosotros", "nuestra" o "la aplicación") recopila y utiliza su información personal en relación con el uso de nuestra aplicación.</p>
+
+        <h3>1. Recopilación de Información Personal</h3>
+
+        <p>La aplicación solicita acceso a ciertos datos personales, como su número de DNI, con el único propósito de identificar los suministros asociados a ese número. Esta información se recopila de manera segura y se almacena en servidores protegidos.</p>
+
+        <h3>2. Uso de la Información Personal</h3>
+
+        <p>La información personal que nos proporciona se utiliza exclusivamente para los fines específicos de la aplicación. No compartimos su información con terceros sin su consentimiento explícito.</p>
+
+        <h3>3. Seguridad de Datos</h3>
+
+        <p>Implementamos medidas técnicas y organizativas adecuadas para proteger sus datos personales contra el acceso no autorizado, divulgación, pérdida accidental o destrucción.</p>
+        <p>Electro Puno S.A.A. utiliza medidas técnicas y organizativas adecuadas para proteger sus datos personales contra acceso o divulgación no autorizados, pérdida accidental o destrucción.</p>
+
+        <h3>4. Derechos del Usuario</h3>
+
+        <p>Usted tiene el derecho de solicitar el acceso, actualización o eliminación de cualquier dato personal que tengamos archivado. Puede ejercer estos derechos enviando un correo electrónico a <a href="mailto:arkezam@gmail.com">arkezam@gmail.com</a>.</p>
+
+        <h3>5. Contacto</h3>
+
+        <p>Si tiene alguna pregunta sobre nuestras políticas de privacidad, no dude en contactarnos a través de <a href="mailto:arkezam@gmail.com">arkezam@gmail.com</a>.</p>
+
+        <h1>Cambios en la Política de Privacidad</h1>
+
+        <p>Nos reservamos el derecho de actualizar o modificar esta política de privacidad en cualquier momento. Le notificaremos sobre cambios significativos mediante la publicación de la versión actualizada en la aplicación.</p>
+
+        <p>Al utilizar nuestra aplicación, usted acepta los términos de esta política de privacidad.</p>
+
+
+        <h1>Términos y Condiciones</h1>
+
+        <p>Al utilizar esta aplicación móvil, usted acepta cumplir con estos términos y condiciones:</p>
+
+        <ol>
+            <li>La aplicación se proporciona "tal cual" sin garantías de ningún tipo. <span>Electro Puno S.A.A.</span> no se hace responsable por cualquier daño que resulte del uso de esta aplicación.</li>
+            <li><span>Electro Puno S.A.A.</span> puede realizar actualizaciones y modificaciones a la aplicación en cualquier momento sin previo aviso.</li>
+            <li>La aplicación recolecta ciertos datos personales como número de DNI para fines de identificación. Esta información no será compartida con terceros sin su consentimiento.</li>
+            <li>Al utilizar la aplicación, usted acepta que <span>Electro Puno S.A.A.</span> no es responsable de interrupciones o fallas en los servicios ofrecidos a través de la aplicación.</li>
+        </ol>
+    </div>
+    <br>
+    <br>
+</main>
+
+<footer>
+    <div class="container__footer">
+        <div class="footer__logos">
+            <!-- <img src="./assets/img/logo-footer.png" alt="logo"> -->
+            <div class="icons">
+                <img th:src="@{/img/icon-facebook.svg}"  alt="Facebook">
+                <img th:src="@{/img/icon-youtube.svg}"  alt="Youtube">
+                <img th:src="@{/img/icon-stoer.svg}"  alt="Facebook">
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="https://bucket01arkezam.s3.amazonaws.com/app-release.apk">Descargar</a></li>
+                <li><a href="#">Preguntas Frec.</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Buscar...">
+            <a href="#" class="btn__morado">Ir</a>
+        </form>
+    </div>
+    <div class="copy">
+        <p>Copyright arkezam@gmail.com - 2023. All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>
+
